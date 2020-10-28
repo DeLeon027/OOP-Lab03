@@ -68,7 +68,11 @@ public class Smartphone {
     public int getsdSize() {
     	return this.sdSize;
     }
-    public String getBrand() {
+    public void setSdSize(int sdSize) {
+		this.sdSize = sdSize;
+	}
+
+	public String getBrand() {
     	return this.brand;
     }
     

@@ -1,6 +1,8 @@
 package oop.lab03.bank;
 
-public class SimpleBankAccount {
+import oop.lab03.bank.interfaces.BankAccount;
+
+public class SimpleBankAccount implements BankAccount{
 
 	
     /*
@@ -110,7 +112,7 @@ public class SimpleBankAccount {
 		this.balance = balance;
 	}
 
-	public int getnTransactionsCount() {
+	public int getTransactionsCount() {
 		return nTransactions;
 	}
 
@@ -118,11 +120,12 @@ public class SimpleBankAccount {
 		this.nTransactions = nTransactions;
 	}
 
-	private int getUserID() {
+	public int getUserID() {
 		return userID;
 	}
 
-	private void setUserID(int userID) {
+	public void setUserID(int userID) {
 		this.userID = userID;
 	}
+
 }
